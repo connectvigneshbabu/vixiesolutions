@@ -1,0 +1,104 @@
+/* Created by Artisteer v4.1.0.59861 */
+
+.vshare-header, #vshare-header-bg, .vshare-layout-cell, .vshare-layout-wrapper, .vshare-footer, .vshare-nav, #vshare-hmenu-bg, .vshare-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.vshare-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.vshare-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#vshare-header-bg 
+{
+   display: none;
+}
+
+.vshare-hmenu>li, .vshare-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.vshare-hmenu, ul.vshare-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#vshare-hmenu-bg 
+{
+   display: none;
+}
+
+ul.vshare-hmenu>li:first-child {
+   padding-right:6px;
+}
+
+ul.vshare-hmenu ul{
+   background-color: #3982D5 !important;
+}
+
+.vshare-content-layout, .vshare-content-layout-row, .vshare-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.vshare-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.vshare-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.vshare-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.vshare-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.vshare-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.vshare-content 
+{
+   width: auto;
+   float:none;
+}
+
