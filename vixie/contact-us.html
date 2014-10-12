@@ -19,7 +19,51 @@
 .ie7 .vshare-post .vshare-layout-cell {border:none !important; padding:0 !important; }
 .ie6 .vshare-post .vshare-layout-cell {border:none !important; padding:0 !important; }
 
-</style></head>
+</style>
+<script>
+function validateForm()
+{
+var x=document.forms["htmlform"]["first_name"].value;
+if (x==null || x=="")
+  {
+  alert("Enter the first name!!!");
+  return false;
+  }
+var y=document.forms["htmlform"]["last_name"].value;
+if (y==null || y=="")
+  {
+  alert("Enter the last name!!!");
+  return false;
+  }
+
+var z=document.forms["htmlform"]["email"].value;
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+if (!filter.test(z))
+  {
+  alert("Enter the valid email!!!");
+  return false;
+  }
+var x1=document.forms["htmlform"]["telephone"].value;
+if (x1==null || x1=="")
+  {
+  alert("Enter the telephone number!!!");
+  return false;
+  }
+var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+if(!x1.match(phoneno))
+  {
+  alert("Enter valid phone number!!!");
+  return false;
+  }
+var x2=document.forms["htmlform"]["comments"].value;
+if (x2==null || x2=="")
+  {
+  alert("Enter your comments!!!");
+  return false;
+  }
+}
+</script>
+</head>
 <body>
 <div id="vshare-main">
 <header class="vshare-header">
@@ -61,7 +105,7 @@
          
         <p>Website: <a href="http://www.vixiesolutions.com">http://www.vixiesolutions.com</a><br>Mail us &nbsp;:<a href="info@vixiesolutions.com">&nbsp;info@vixiesolutions.com</a></p>
     </div><div class="vshare-layout-cell layout-item-0" style="width: 50%" >
-        <p></p><form name="htmlform" method="post" action="html_form_send.php">
+        <p></p><form name="htmlform" method="post" action="html_form_send.php" onSubmit="return validateForm()">
                 <table width="450px">
                 
                 <tbody><tr>
@@ -74,7 +118,7 @@
                 </tr>
                  
                 <tr>
-                 <td valign="top" "="">
+                 <td valign="top" "=">
                   <label for="last_name">Last Name *</label>
                  </td>
                  <td valign="top">
