@@ -17,7 +17,7 @@ include ('connect.php');
   $query="INSERT INTO contact(`id`,`fname`,`lname`,`email`,`telephone`,`comments`) VALUES ('','$fname','$lname','$email','$telephone','$comments')";
   mysql_query($query);
 //}
-$to='prasanna.sep880115@gmail.com';
+$to='connect2prasi@gmail.com';
 $subject='Contacts';
 $mailheader='from: connect2prasi@gmail.com';
 $message="First Name: ".$fname."\n";
