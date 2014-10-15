@@ -1,0 +1,20 @@
+body{
+background: black;
+}
+.container{
+width: 400px;
+background: white;
+padding: 200px;
+margin: 0 auto;
+}
+.cloud1{
+position: fixed;
+width: 116px;
+height: 268px;
+left: 50%;
+top: 50%;
+background: url(images/man.png);
+margin-left: 0px;
+margin-top: 0px;
+z-index: +5;
+}
