@@ -1,0 +1,2320 @@
+/* Created by Artisteer v4.1.0.59861 */
+
+
+#vshare-main
+{
+   background: #FFFFFF url('images/page.png') repeat-x scroll;
+   background: url('images/pageglare.png') no-repeat, url('images/page.png') repeat-x, #FFFFFF;
+   margin:0 auto;
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: justify;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.vshare-hmenu
+{
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.vshare-button
+{
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #FFFFFF;
+   background: linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #D1D1D1 100%) no-repeat;
+   -webkit-border-radius:15px;
+   -moz-border-radius:15px;
+   border-radius:15px;
+   border:1px solid #BFBFBF;
+   padding:0 20px;
+   margin:0 auto;
+   height:28px;
+}
+
+.vshare-postcontent,
+.vshare-postheadericons,
+.vshare-postfootericons,
+.vshare-blockcontent,
+ul.vshare-vmenu a 
+{
+   text-align: left;
+}
+
+.vshare-postcontent,
+.vshare-postcontent li,
+.vshare-postcontent table,
+.vshare-postcontent a,
+.vshare-postcontent a:link,
+.vshare-postcontent a:visited,
+.vshare-postcontent a.visited,
+.vshare-postcontent a:hover,
+.vshare-postcontent a.hovered
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   line-height: 150%;
+}
+
+.vshare-postcontent p
+{
+   margin: 12px 0;
+}
+
+.vshare-postcontent h1, .vshare-postcontent h1 a, .vshare-postcontent h1 a:link, .vshare-postcontent h1 a:visited, .vshare-postcontent h1 a:hover,
+.vshare-postcontent h2, .vshare-postcontent h2 a, .vshare-postcontent h2 a:link, .vshare-postcontent h2 a:visited, .vshare-postcontent h2 a:hover,
+.vshare-postcontent h3, .vshare-postcontent h3 a, .vshare-postcontent h3 a:link, .vshare-postcontent h3 a:visited, .vshare-postcontent h3 a:hover,
+.vshare-postcontent h4, .vshare-postcontent h4 a, .vshare-postcontent h4 a:link, .vshare-postcontent h4 a:visited, .vshare-postcontent h4 a:hover,
+.vshare-postcontent h5, .vshare-postcontent h5 a, .vshare-postcontent h5 a:link, .vshare-postcontent h5 a:visited, .vshare-postcontent h5 a:hover,
+.vshare-postcontent h6, .vshare-postcontent h6 a, .vshare-postcontent h6 a:link, .vshare-postcontent h6 a:visited, .vshare-postcontent h6 a:hover,
+.vshare-blockheader .t, .vshare-blockheader .t a, .vshare-blockheader .t a:link, .vshare-blockheader .t a:visited, .vshare-blockheader .t a:hover,
+.vshare-vmenublockheader .t, .vshare-vmenublockheader .t a, .vshare-vmenublockheader .t a:link, .vshare-vmenublockheader .t a:visited, .vshare-vmenublockheader .t a:hover,
+.vshare-headline, .vshare-headline a, .vshare-headline a:link, .vshare-headline a:visited, .vshare-headline a:hover,
+.vshare-slogan, .vshare-slogan a, .vshare-slogan a:link, .vshare-slogan a:visited, .vshare-slogan a:hover,
+.vshare-postheader, .vshare-postheader a, .vshare-postheader a:link, .vshare-postheader a:visited, .vshare-postheader a:hover
+{
+   font-size: 28px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent a, .vshare-postcontent a:link
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #3387CC;
+}
+
+.vshare-postcontent a:visited, .vshare-postcontent a.visited
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #9C9C9C;
+}
+
+.vshare-postcontent  a:hover, .vshare-postcontent a.hover
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #60A2D7;
+}
+
+.vshare-postcontent h1
+{
+   color: #9C9C9C;
+   margin: 10px 0;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-blockcontent h1
+{
+   margin: 10px 0;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h1 a, .vshare-postcontent h1 a:link, .vshare-postcontent h1 a:hover, .vshare-postcontent h1 a:visited, .vshare-blockcontent h1 a, .vshare-blockcontent h1 a:link, .vshare-blockcontent h1 a:hover, .vshare-blockcontent h1 a:visited 
+{
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h2
+{
+   color: #3387CC;
+   margin: 10px 0 20px;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-blockcontent h2
+{
+   margin: 10px 0 20px;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h2 a, .vshare-postcontent h2 a:link, .vshare-postcontent h2 a:hover, .vshare-postcontent h2 a:visited, .vshare-blockcontent h2 a, .vshare-blockcontent h2 a:link, .vshare-blockcontent h2 a:hover, .vshare-blockcontent h2 a:visited 
+{
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h3
+{
+   color: #89B5E6;
+   margin: 20px 0 10px;
+   font-size: 22px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-blockcontent h3
+{
+   margin: 20px 0 10px;
+   font-size: 22px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h3 a, .vshare-postcontent h3 a:link, .vshare-postcontent h3 a:hover, .vshare-postcontent h3 a:visited, .vshare-blockcontent h3 a, .vshare-blockcontent h3 a:link, .vshare-blockcontent h3 a:hover, .vshare-blockcontent h3 a:visited 
+{
+   font-size: 22px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h4
+{
+   color: #3982D5;
+   margin: 10px 0;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.vshare-blockcontent h4
+{
+   margin: 10px 0;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.vshare-postcontent h4 a, .vshare-postcontent h4 a:link, .vshare-postcontent h4 a:hover, .vshare-postcontent h4 a:visited, .vshare-blockcontent h4 a, .vshare-blockcontent h4 a:link, .vshare-blockcontent h4 a:hover, .vshare-blockcontent h4 a:visited 
+{
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.vshare-postcontent h5
+{
+   color: #292929;
+   font-size: 36px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+   line-height: 125%;
+}
+
+.vshare-blockcontent h5
+{
+   font-size: 36px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+   line-height: 125%;
+}
+
+.vshare-postcontent h5 a, .vshare-postcontent h5 a:link, .vshare-postcontent h5 a:hover, .vshare-postcontent h5 a:visited, .vshare-blockcontent h5 a, .vshare-blockcontent h5 a:link, .vshare-blockcontent h5 a:hover, .vshare-blockcontent h5 a:visited 
+{
+   font-size: 36px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+   line-height: 125%;
+}
+
+.vshare-postcontent h6
+{
+   color: #616161;
+   font-size: 14px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-blockcontent h6
+{
+   font-size: 14px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postcontent h6 a, .vshare-postcontent h6 a:link, .vshare-postcontent h6 a:hover, .vshare-postcontent h6 a:visited, .vshare-blockcontent h6 a, .vshare-blockcontent h6 a:link, .vshare-blockcontent h6 a:hover, .vshare-blockcontent h6 a:visited 
+{
+   font-size: 14px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   text-align: left;
+}
+
+header, footer, article, nav, #vshare-hmenu-bg, .vshare-sheet, .vshare-hmenu a, .vshare-vmenu a, .vshare-slidenavigator > a, .vshare-checkbox:before, .vshare-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #vshare-hmenu-bg, .vshare-sheet, .vshare-slidenavigator > a, .vshare-checkbox:before, .vshare-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 1000px;
+   color: #404040;
+}
+
+.vshare-header:before, #vshare-header-bg:before, .vshare-layout-cell:before, .vshare-layout-wrapper:before, .vshare-footer:before, .vshare-nav:before, #vshare-hmenu-bg:before, .vshare-sheet:before
+{
+   width: 100%;
+   content: " ";
+   display: table;
+}
+.vshare-header:after, #vshare-header-bg:after, .vshare-layout-cell:after, .vshare-layout-wrapper:after, .vshare-footer:after, .vshare-nav:after, #vshare-hmenu-bg:after, .vshare-sheet:after,
+.cleared, .clearfix:after {
+   clear: both;
+   font: 0/0 serif;
+   display: block;
+   content: " ";
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .vshare-postcontent li h1, .vshare-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .vshare-postcontent li h2, .vshare-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .vshare-postcontent li h3, .vshare-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .vshare-postcontent li h4, .vshare-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .vshare-postcontent li h5, .vshare-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .vshare-postcontent li h6, .vshare-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .vshare-postcontent li p, .vshare-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.vshare-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.vshare-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.vshare-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.vshare-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.vshare-object1204543426
+{
+    display: block;
+    left: 45.74%;
+    margin-left: -371px;
+    position: absolute;
+    top: 30px;
+    width: 812px;
+    height: 301px;
+    background-image: url('images/object1204543426.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.vshare-object433791920
+{
+    display: block;
+    left: 0%;
+    margin-left: -152px;
+    position: absolute;
+    top: 46px;
+    width: 109px;
+    height: 109px;
+    background-image: url('images/object433791920.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+
+.vshare-footer .layout-item-0 { border-spacing: 15px 0px; border-collapse: separate;  }
+.vshare-footer .layout-item-1 { padding: 20px;  }
+.ie7 .vshare-post .vshare-layout-cell {border:none !important; padding:0 !important; }
+.ie6 .vshare-post .vshare-layout-cell {border:none !important; padding:0 !important; }
+
+.vshare-header
+{
+   margin:0 auto;
+   position:relative;
+   height: 350px;
+   background-image: url('images/header.jpg');
+   background-position: center top;
+   background-repeat: no-repeat;
+}
+
+.responsive .vshare-header 
+{
+   background-image: url('images/header.jpg');
+   background-position: center center;
+}
+
+.vshare-header-inner{
+   position: relative;
+   width: 1000px;
+   z-index: auto !important;
+   margin: 0 auto;
+}
+
+.vshare-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.vshare-nav
+{
+   background: #1E4E76 url('images/nav.png') scroll;
+   background: linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   background: -webkit-linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), -webkit-linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), -moz-linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), -o-linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), -ms-linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   background: linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(21, 55, 84, 0.09) 0, rgba(35, 92, 139, 0.15) 40%, rgba(36, 96, 145, 0.16) 50%, rgba(35, 92, 139, 0.15) 60%, rgba(21, 55, 84, 0.09) 100%) no-repeat, url('images/nav.png'), linear-gradient(top, #173E5E 0, #215683 40%, #225987 50%, #215683 60%, #173E5E 100%) no-repeat;
+   border-bottom:5px solid #545454;
+   padding:3px 3px 0;
+   position: absolute;
+   margin: 0;
+   top:     0;
+   width: 100%;
+   z-index: 100;
+}
+
+ul.vshare-hmenu a, ul.vshare-hmenu a:link, ul.vshare-hmenu a:visited, ul.vshare-hmenu a:hover 
+{
+   outline: none;
+   position: relative;
+   z-index: 11;
+}
+
+ul.vshare-hmenu, ul.vshare-hmenu ul
+{
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   list-style-type: none;
+}
+
+ul.vshare-hmenu li
+{
+   position: relative;
+   z-index: 5;
+   display: block;
+   float: left;
+   background: none;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+ul.vshare-hmenu li:hover
+{
+   z-index: 10000;
+   white-space: normal;
+}
+
+ul.vshare-hmenu:after, ul.vshare-hmenu ul:after
+{
+   content: ".";
+   height: 0;
+   display: block;
+   visibility: hidden;
+   overflow: hidden;
+   clear: both;
+}
+
+ul.vshare-hmenu, ul.vshare-hmenu ul 
+{
+   min-height: 0;
+}
+
+ul.vshare-hmenu 
+{
+   display: inline-block;
+   vertical-align: bottom;
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
+.vshare-nav-inner:before 
+{
+   content:' ';
+}
+
+nav.vshare-nav
+{
+   border-bottom-right-radius: 0;
+   border-bottom-left-radius: 0;
+}
+
+.vshare-nav-inner{
+   text-align: left;
+   margin:0 auto;
+}
+
+.desktop  .vshare-nav-inner{
+   width: 1000px;
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
+.desktop .vshare-nav
+{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.vshare-hmenu-extra1
+{
+   position: relative;
+   display: block;
+   float: left;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.vshare-hmenu-extra2
+{
+   position: relative;
+   display: block;
+   float: right;
+   width: auto;
+   height: auto;
+   background-position: center;
+}
+
+.vshare-hmenu
+{
+   float: left;
+}
+
+.vshare-menuitemcontainer
+{
+   margin:0 auto;
+}
+ul.vshare-hmenu>li {
+   margin-left: 6px;
+}
+ul.vshare-hmenu>li:first-child {
+   margin-left: 3px;
+}
+ul.vshare-hmenu>li:last-child, ul.vshare-hmenu>li.last-child {
+   margin-right: 3px;
+}
+
+ul.vshare-hmenu>li>a
+{
+   -webkit-border-radius:6px 6px 0 0;
+   -moz-border-radius:6px 6px 0 0;
+   border-radius:6px 6px 0 0;
+   padding:0 17px;
+   margin:0 auto;
+   position: relative;
+   display: block;
+   height: 31px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #FFFFFF;
+   line-height: 31px;
+   text-align: center;
+}
+
+.vshare-hmenu a, 
+.vshare-hmenu a:link, 
+.vshare-hmenu a:visited, 
+.vshare-hmenu a.active, 
+.vshare-hmenu a:hover
+{
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+}
+
+ul.vshare-hmenu>li>a.active
+{
+   background: #89B9E1;
+   -webkit-border-radius:6px 6px 0 0;
+   -moz-border-radius:6px 6px 0 0;
+   border-radius:6px 6px 0 0;
+   padding:0 17px;
+   margin:0 auto;
+   color: #2E2E2E;
+   padding-bottom: 5px;
+   margin-bottom: -5px;
+   text-decoration: none;
+}
+
+ul.vshare-hmenu>li>a:visited, 
+ul.vshare-hmenu>li>a:hover, 
+ul.vshare-hmenu>li:hover>a {
+   text-decoration: none;
+}
+
+ul.vshare-hmenu>li>a:hover, .desktop ul.vshare-hmenu>li:hover>a
+{
+   background: #89B9E1;
+   -webkit-border-radius:6px 6px 0 0;
+   -moz-border-radius:6px 6px 0 0;
+   border-radius:6px 6px 0 0;
+   padding:0 17px;
+   margin:0 auto;
+}
+ul.vshare-hmenu>li>a:hover, 
+.desktop ul.vshare-hmenu>li:hover>a {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+ul.vshare-hmenu>li>a.active:hover {
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+ul.vshare-hmenu li li a
+{
+   background: #BFBFBF;
+   background: transparent;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
+   border-radius:6px;
+   padding:0 17px;
+   margin:0 auto;
+}
+ul.vshare-hmenu li li 
+{
+   float: none;
+   width: auto;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.desktop ul.vshare-hmenu li li ul>li:first-child 
+{
+   margin-top: 0;
+}
+
+ul.vshare-hmenu li li ul>li:last-child 
+{
+   margin-bottom: 0;
+}
+
+.vshare-hmenu ul a
+{
+   display: block;
+   white-space: nowrap;
+   height: 25px;
+   min-width: 7em;
+   border: 0 solid transparent;
+   text-align: left;
+   line-height: 25px;
+   color: #1C1C1C;
+   font-size: 12px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   margin:0;
+}
+
+.vshare-hmenu ul a:link, 
+.vshare-hmenu ul a:visited, 
+.vshare-hmenu ul a.active, 
+.vshare-hmenu ul a:hover
+{
+   text-align: left;
+   line-height: 25px;
+   color: #1C1C1C;
+   font-size: 12px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   margin:0;
+}
+
+ul.vshare-hmenu ul li a:hover, .desktop ul.vshare-hmenu ul li:hover>a
+{
+   background: #ABABAB;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
+   border-radius:6px;
+   margin:0 auto;
+}
+
+.vshare-hmenu ul li a:hover
+{
+   color: #112E45;
+}
+
+.desktop .vshare-hmenu ul li:hover>a
+{
+   color: #112E45;
+}
+
+ul.vshare-hmenu ul:before
+{
+   background: #3982D5;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
+   border-radius:6px;
+   border:1px solid #6CA2E0;
+   margin:0 auto;
+   display: block;
+   position: absolute;
+   content: ' ';
+   z-index: 1;
+}
+.desktop ul.vshare-hmenu li:hover>ul {
+   visibility: visible;
+   top: 100%;
+}
+.desktop ul.vshare-hmenu li li:hover>ul {
+   top: 0;
+   left: 100%;
+}
+
+ul.vshare-hmenu ul
+{
+   visibility: hidden;
+   position: absolute;
+   z-index: 10;
+   left: 0;
+   top: 0;
+   background-image: url('images/spacer.gif');
+}
+
+.desktop ul.vshare-hmenu>li>ul
+{
+   padding: 12px 32px 32px 32px;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.vshare-hmenu ul ul
+{
+   padding: 32px 32px 32px 14px;
+   margin: -32px 0 0 -9px;
+}
+
+.desktop ul.vshare-hmenu ul.vshare-hmenu-left-to-right 
+{
+   right: auto;
+   left: 0;
+   margin: -10px 0 0 -30px;
+}
+
+.desktop ul.vshare-hmenu ul.vshare-hmenu-right-to-left 
+{
+   left: auto;
+   right: 0;
+   margin: -10px -30px 0 0;
+}
+
+.desktop ul.vshare-hmenu li li:hover>ul.vshare-hmenu-left-to-right {
+   right: auto;
+   left: 100%;
+}
+.desktop ul.vshare-hmenu li li:hover>ul.vshare-hmenu-right-to-left {
+   left: auto;
+   right: 100%;
+}
+
+.desktop ul.vshare-hmenu ul ul.vshare-hmenu-left-to-right
+{
+   right: auto;
+   left: 0;
+   padding: 32px 32px 32px 14px;
+   margin: -32px 0 0 -9px;
+}
+
+.desktop ul.vshare-hmenu ul ul.vshare-hmenu-right-to-left
+{
+   left: auto;
+   right: 0;
+   padding: 32px 14px 32px 32px;
+   margin: -32px -9px 0 0;
+}
+
+.desktop ul.vshare-hmenu li ul>li:first-child {
+   margin-top: 0;
+}
+.desktop ul.vshare-hmenu li ul>li:last-child {
+   margin-bottom: 0;
+}
+
+.desktop ul.vshare-hmenu ul ul:before
+{
+   border-radius: 6px;
+   top: 30px;
+   bottom: 30px;
+   right: 30px;
+   left: 12px;
+}
+
+.desktop ul.vshare-hmenu>li>ul:before
+{
+   top: 10px;
+   right: 30px;
+   bottom: 30px;
+   left: 30px;
+}
+
+.desktop ul.vshare-hmenu>li>ul.vshare-hmenu-left-to-right:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.vshare-hmenu>li>ul.vshare-hmenu-right-to-left:before {
+   right: 30px;
+   left: 30px;
+}
+.desktop ul.vshare-hmenu ul ul.vshare-hmenu-left-to-right:before {
+   right: 30px;
+   left: 12px;
+}
+.desktop ul.vshare-hmenu ul ul.vshare-hmenu-right-to-left:before {
+   right: 12px;
+   left: 30px;
+}
+
+.vshare-sheet
+{
+   background: #FFFFFF;
+   background: transparent;
+   margin:4px auto 0;
+   position:relative;
+   cursor:auto;
+   width: 1000px;
+   z-index: auto !important;
+}
+
+.vshare-layout-wrapper
+{
+   position: relative;
+   margin: 0 auto 0 auto;
+   z-index: auto !important;
+}
+
+.vshare-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.vshare-content-layout-row 
+{
+   display: table-row;
+}
+
+.vshare-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+/* need only for content layout in post content */ 
+.vshare-postcontent .vshare-content-layout
+{
+   border-collapse: collapse;
+}
+
+.vshare-block
+{
+   margin:10px;
+}
+div.vshare-block img
+{
+   border: none;
+   margin: 0;
+}
+
+.vshare-blockheader
+{
+   background: #9ABFEA;
+   background: linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   background: -webkit-linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   background: -moz-linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   background: -o-linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   background: -ms-linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   background: linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   -svg-background: linear-gradient(top, rgba(188, 212, 241, 0.8) 0, rgba(120, 170, 226, 0.8) 100%) no-repeat;
+   padding:10px 7px;
+   margin:0 auto;
+}
+.vshare-blockheader .t,
+.vshare-blockheader .t a,
+.vshare-blockheader .t a:link,
+.vshare-blockheader .t a:visited, 
+.vshare-blockheader .t a:hover
+{
+   color: #000000;
+   font-size: 14px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.vshare-blockcontent
+{
+   background: #C2DBF0;
+   background: rgba(194, 219, 240, 0.5);
+   border:1px solid rgba(222, 222, 222, 0.5);
+   padding:7px;
+   margin:0 auto;
+   color: #363636;
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+.vshare-blockcontent table,
+.vshare-blockcontent li, 
+.vshare-blockcontent a,
+.vshare-blockcontent a:link,
+.vshare-blockcontent a:visited,
+.vshare-blockcontent a:hover
+{
+   color: #363636;
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.vshare-blockcontent a, .vshare-blockcontent a:link
+{
+   color: #2F7CBC;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.vshare-blockcontent a:visited, .vshare-blockcontent a.visited
+{
+   color: #A6A6A6;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.vshare-blockcontent a:hover, .vshare-blockcontent a.hover
+{
+   color: #5098D3;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.vshare-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -13px;
+}
+.opera .vshare-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.vshare-block li
+{
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   line-height: 125%;
+   color: #5C5C5C;
+}
+
+.vshare-block ul>li, .vshare-block ol
+{
+   padding: 0;
+}
+
+.vshare-block ul>li
+{
+   padding-left: 13px;
+}
+
+.vshare-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.vshare-button,
+a.vshare-button:link,
+a:link.vshare-button:link,
+body a.vshare-button:link,
+a.vshare-button:visited,
+body a.vshare-button:visited,
+input.vshare-button,
+button.vshare-button
+{
+   text-decoration: none;
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #404040;
+   margin: 0 5px 0 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 28px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.vshare-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .vshare-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea, a.vshare-search-button span
+{
+   vertical-align: middle;
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+.vshare-block select 
+{
+   width:96%;
+}
+
+input.vshare-button
+{
+   float: none !important;
+}
+
+.vshare-button.active, .vshare-button.active:hover
+{
+   background: #6CA2E0;
+   background: linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   background: -moz-linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   background: -o-linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   background: -ms-linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   background: linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   -svg-background: linear-gradient(top, #8DB7E7 0, #4E8FDA 100%) no-repeat;
+   -webkit-border-radius:15px;
+   -moz-border-radius:15px;
+   border-radius:15px;
+   border:1px solid #6CA2E0;
+   padding:0 20px;
+   margin:0 auto;
+}
+.vshare-button.active, .vshare-button.active:hover {
+   color: #FFFFFF !important;
+}
+
+.vshare-button.hover, .vshare-button:hover
+{
+   background: #9ABFEA;
+   background: linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   background: -moz-linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   background: -o-linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   background: -ms-linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   background: linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   -svg-background: linear-gradient(top, #BCD4F1 0, #78AAE2 100%) no-repeat;
+   -webkit-border-radius:15px;
+   -moz-border-radius:15px;
+   border-radius:15px;
+   border:1px solid #9ABFEA;
+   padding:0 20px;
+   margin:0 auto;
+}
+.vshare-button.hover, .vshare-button:hover {
+   color: #FFFFFF !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #F9FAFB;
+   border:1px solid rgba(96, 162, 215, 0.2);
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: auto;
+   padding: 8px 0;
+   color: #184162 !important;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-shadow: none;
+}
+input.vshare-error, textarea.vshare-error
+{
+   background: #F9FAFB;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.vshare-error, textarea.vshare-error {
+   color: #184162 !important;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.vshare-search input[type="text"]
+{
+   background: #F9FAFB;
+   border-radius: 0;
+   border:1px solid #CCD6E0;
+   margin:0 auto;
+   width: 100%;
+   padding: 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #184162 !important;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.vshare-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.vshare-search input, a.vshare-search-button
+{
+   top:0;
+   right:0;
+}
+
+form.vshare-search>input, a.vshare-search-button{
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+
+form.vshare-search input[type="submit"], input.vshare-search-button, a.vshare-search-button
+{
+   background: #9ABFEA;
+   -webkit-border-radius:0 -1px -1px 0;
+   -moz-border-radius:0 -1px -1px 0;
+   border-radius:0 -1px -1px 0;
+   margin:0 auto;
+}
+form.vshare-search input[type="submit"], input.vshare-search-button, a.vshare-search-button {
+   position:absolute;
+   left:auto;
+   display:block;
+   border: 0;
+   top: 1px;
+   bottom: 1px;
+   right: 	1px;
+   padding:0 6px;
+   color: #1E538F !important;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   cursor: pointer;
+}
+
+a.vshare-search-button span.vshare-search-button-text, a.vshare-search-button:after {
+   vertical-align:middle;
+}
+
+a.vshare-search-button:after {
+   display:inline-block;
+   content:' ';
+   height: 100%;
+}
+
+a.vshare-search-button, a.vshare-search-button span,
+a.vshare-search-button:visited, a.vshare-search-button.visited,
+a.vshare-search-button:hover, a.vshare-search-button.hover 
+{
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+label.vshare-checkbox:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.vshare-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #194466 !important;
+}
+
+.vshare-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.vshare-checkbox.active:before
+{
+   background: #BFBFBF;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.vshare-checkbox.hovered:before
+{
+   background: #DEDEDE;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.vshare-radiobutton:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.vshare-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+   color: #194466 !important;
+}
+
+.vshare-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.vshare-radiobutton.active:before
+{
+   background: #BFBFBF;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.vshare-radiobutton.hovered:before
+{
+   background: #DEDEDE;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.vshare-comments
+{
+   border-top:1px dotted #ABABAB;
+   margin:0 auto;
+   margin-top: 25px;
+}
+
+.vshare-comments h2
+{
+   color: #292929;
+}
+
+.vshare-comment-inner
+{
+   background: #E2E8EE;
+   background: transparent;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   padding:5px;
+   margin:0 auto;
+   margin-left: 94px;
+}
+.vshare-comment-avatar 
+{
+   float:left;
+   width:80px;
+   height:80px;
+   padding:1px;
+   background:#fff;
+   border:1px solid #E2E8EE;
+}
+
+.vshare-comment-avatar>img
+{
+   margin:0 !important;
+   border:none !important;
+}
+
+.vshare-comment-content
+{
+   padding:10px 0;
+   color: #163D69;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+.vshare-comment
+{
+   margin-top: 6px;
+}
+
+.vshare-comment:first-child
+{
+   margin-top: 0;
+}
+
+.vshare-comment-header
+{
+   color: #292929;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.vshare-comment-header a, 
+.vshare-comment-header a:link, 
+.vshare-comment-header a:visited,
+.vshare-comment-header a.visited,
+.vshare-comment-header a:hover,
+.vshare-comment-header a.hovered
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.vshare-comment-header a, .vshare-comment-header a:link
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.vshare-comment-header a:visited, .vshare-comment-header a.visited
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.vshare-comment-header a:hover,  .vshare-comment-header a.hovered
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   color: #878787;
+}
+
+.vshare-comment-content a, 
+.vshare-comment-content a:link, 
+.vshare-comment-content a:visited,
+.vshare-comment-content a.visited,
+.vshare-comment-content a:hover,
+.vshare-comment-content a.hovered
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+.vshare-comment-content a, .vshare-comment-content a:link
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   color: #2A6FA7;
+}
+
+.vshare-comment-content a:visited, .vshare-comment-content a.visited
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   color: #1D518B;
+}
+
+.vshare-comment-content a:hover,  .vshare-comment-content a.hovered
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   color: #2A6FA7;
+}
+
+.vshare-pager
+{
+   background: #EFF2F5;
+   background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #93A8BE 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   border:1px solid #ABABAB;
+   padding:5px;
+}
+
+.vshare-pager>*:last-child,
+.vshare-pager>*:last-child:hover
+{
+   margin-right:0;
+}
+
+.vshare-pager>span {
+   cursor:default;
+}
+
+.vshare-pager>*
+{
+   background: #DEDEDE;
+   background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   border:1px solid #DEDEDE;
+   padding:7px;
+   margin:0 4px 0 auto;
+   position:relative;
+   display:inline-block;
+   margin-left: 0;
+}
+
+.vshare-pager a:link,
+.vshare-pager a:visited
+{
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #212121
+;
+}
+
+.vshare-pager .active
+{
+   background: #B6BFC9;
+   background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -moz-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -o-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: -ms-linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   -svg-background: linear-gradient(top, #E5E8EB 0, #8796A6 100%) no-repeat;
+   border:1px solid #DEDEDE;
+   padding:7px;
+   margin:0 4px 0 auto;
+   color: #FFFFFF
+;
+}
+
+.vshare-pager .more
+{
+   background: #DEDEDE;
+   background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -o-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FFFFFF 0, #ABABAB 100%) no-repeat;
+   border:1px solid #DEDEDE;
+   margin:0 4px 0 auto;
+}
+.vshare-pager a.more:link,
+.vshare-pager a.more:visited
+{
+   color: #0D2335
+;
+}
+.vshare-pager a:hover
+{
+   background: #BFBFBF;
+   background: linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   background: -moz-linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   background: -o-linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   background: -ms-linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   background: linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   -svg-background: linear-gradient(top, #E8E8E8 0, #969696 100%) no-repeat;
+   border:1px solid #DEDEDE;
+   padding:7px;
+   margin:0 4px 0 auto;
+}
+.vshare-pager  a:hover,
+.vshare-pager  a.more:hover
+{
+   color: #262626
+;
+}
+.vshare-pager>*:after
+{
+   margin:0 0 0 auto;
+   display:inline-block;
+   position:absolute;
+   content: ' ';
+   top:0;
+   width:0;
+   height:100%;
+   right: 0;
+   text-decoration:none;
+}
+
+.vshare-pager>*:last-child:after{
+   display:none;
+}
+
+.vshare-commentsform
+{
+   background: #E2E8EE;
+   background: transparent;
+   padding:10px;
+   margin:0 auto;
+   margin-top:25px;
+   color: #292929;
+}
+
+.vshare-commentsform h2{
+   padding-bottom:10px;
+   margin: 0;
+   color: #292929;
+}
+
+.vshare-commentsform label {
+   display: inline-block;
+   line-height: 25px;
+}
+
+.vshare-commentsform input:not([type=submit]), .vshare-commentsform textarea {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width:100%;
+   max-width:100%;
+}
+
+.vshare-commentsform .form-submit
+{
+   margin-top: 10px;
+}
+.vshare-post
+{
+   padding:15px;
+}
+a img
+{
+   border: 0;
+}
+
+.vshare-article img, img.vshare-article, .vshare-block img, .vshare-footer img
+{
+   margin: 0 0 0 0;
+}
+
+.vshare-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.vshare-article table, table.vshare-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.vshare-post .vshare-content-layout-br
+{
+   height: 0;
+}
+
+.vshare-article th, .vshare-article td
+{
+   padding: 2px;
+   vertical-align: top;
+   text-align: left;
+}
+
+.vshare-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 0 0 0 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.vshare-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.vshare-postheader
+{
+   color: #757575;
+   margin: 10px 0 0 10px;
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postheader a, 
+.vshare-postheader a:link, 
+.vshare-postheader a:visited,
+.vshare-postheader a.visited,
+.vshare-postheader a:hover,
+.vshare-postheader a.hovered
+{
+   font-size: 26px;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+}
+
+.vshare-postheader a, .vshare-postheader a:link
+{
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #2E7AB8;
+}
+
+.vshare-postheader a:visited, .vshare-postheader a.visited
+{
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #8C8C8C;
+}
+
+.vshare-postheader a:hover,  .vshare-postheader a.hovered
+{
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #60A2D7;
+}
+
+.vshare-postcontent ul>li:before,  .vshare-post ul>li:before,  .vshare-textblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:15px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .vshare-postcontent ul>li:before, .opera   .vshare-post ul>li:before, .opera   .vshare-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.vshare-postcontent li, .vshare-post li, .vshare-textblock li
+{
+   font-size: 12px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   line-height: 200%;
+   color: #141414;
+   margin: 0 0 0 4px;
+}
+
+.vshare-postcontent ul>li, .vshare-post ul>li, .vshare-textblock ul>li, .vshare-postcontent ol, .vshare-post ol, .vshare-textblock ol
+{
+   padding: 0;
+}
+
+.vshare-postcontent ul>li, .vshare-post ul>li, .vshare-textblock ul>li
+{
+   padding-left: 31px;
+}
+
+.vshare-postcontent ul>li:before,  .vshare-post ul>li:before,  .vshare-textblock ul>li:before
+{
+   margin-left: -31px;
+}
+
+.vshare-postcontent ol, .vshare-post ol, .vshare-textblock ol, .vshare-postcontent ul, .vshare-post ul, .vshare-textblock ul
+{
+   margin: 1em 0 1em 4px;
+}
+
+.vshare-postcontent li ol, .vshare-post li ol, .vshare-textblock li ol, .vshare-postcontent li ul, .vshare-post li ul, .vshare-textblock li ul
+{
+   margin: 0.5em 0 0.5em 4px;
+}
+
+.vshare-postcontent li, .vshare-post li, .vshare-textblock li
+{
+   margin: 0 0 0 0;
+}
+
+.vshare-postcontent ol>li, .vshare-post ol>li, .vshare-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.vshare-postcontent ul>li, .vshare-post ul>li, .vshare-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #D9E7F7 url('images/postquote.png') no-repeat scroll;
+   border:1px solid #BFBFBF;
+   padding:6px 6px 6px 43px;
+   margin:10px 10px 10px 50px;
+   color: #363636;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .vshare-postcontent blockquote a, .vshare-blockcontent blockquote a, .vshare-footer blockquote a,
+blockquote a:link, .vshare-postcontent blockquote a:link, .vshare-blockcontent blockquote a:link, .vshare-footer blockquote a:link,
+blockquote a:visited, .vshare-postcontent blockquote a:visited, .vshare-blockcontent blockquote a:visited, .vshare-footer blockquote a:visited,
+blockquote a:hover, .vshare-postcontent blockquote a:hover, .vshare-blockcontent blockquote a:hover, .vshare-footer blockquote a:hover
+{
+   color: #363636;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.vshare-postcontent blockquote p,
+.vshare-blockcontent blockquote p,
+.vshare-footer blockquote p
+{
+   margin: 0;
+   margin: 2px 0 2px 15px;
+}
+
+.vshare-footer
+{
+   background: #1E4E76 url('images/footer.png') scroll;
+   margin:10px auto 0;
+   position: relative;
+   color: #DBDBDB;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-align: left;
+   padding: 0;
+}
+
+.vshare-footer a,
+.vshare-footer a:link,
+.vshare-footer a:visited,
+.vshare-footer a:hover,
+.vshare-footer td, 
+.vshare-footer th,
+.vshare-footer caption
+{
+   color: #DBDBDB;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+.vshare-footer p 
+{
+   padding:0;
+   text-align: left;
+}
+
+.vshare-footer a,
+.vshare-footer a:link
+{
+   color: #78AAE2;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.vshare-footer a:visited
+{
+   color: #78AAE2;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.vshare-footer a:hover
+{
+   color: #BDBDBD;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.vshare-footer h1
+{
+   color: #949494;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.vshare-footer h2
+{
+   color: #ABABAB;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.vshare-footer h3
+{
+   color: #60A2D7;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.vshare-footer h4
+{
+   color: #9ABFEA;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.vshare-footer h5
+{
+   color: #9ABFEA;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.vshare-footer h6
+{
+   color: #9ABFEA;
+   font-family: 'Arial Narrow', Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.vshare-footer img
+{
+   border: none;
+   margin: 5px;
+}
+
+.vshare-footer-inner
+{
+   margin: 0 auto;
+   width:1000px;
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.vshare-rss-tag-icon
+{
+   background:  url('images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.vshare-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.vshare-facebook-tag-icon
+{
+   background:  url('images/footerfacebookicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.vshare-facebook-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.vshare-twitter-tag-icon
+{
+   background:  url('images/footertwittericon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.vshare-twitter-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.vshare-footer li
+{
+   font-size: 13px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   line-height: 125%;
+   color: #D6E7F5;
+}
+
+.vshare-page-footer, 
+.vshare-page-footer a,
+.vshare-page-footer a:link,
+.vshare-page-footer a:visited,
+.vshare-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #B7D2F0;
+}
+
+.vshare-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #FBFCFE;
+}
+
+.vshare-lightbox-wrapper 
+{
+   background: #333;
+   background: rgba(0, 0, 0, .8);
+   bottom: 0;
+   left: 0;
+   padding: 0 100px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+   z-index: 1000000;
+}
+
+.vshare-lightbox,
+.vshare-lightbox-wrapper .vshare-lightbox-image
+{
+   cursor: pointer;
+}
+
+.vshare-lightbox-wrapper .vshare-lightbox-image
+{
+   border: 6px solid #fff;
+   border-radius: 3px;
+   display: none;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.vshare-lightbox-wrapper .vshare-lightbox-image.active
+{
+   display: inline-block;
+}
+
+.vshare-lightbox-wrapper .lightbox-error
+{
+   background: #fff;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 80px;
+   opacity: .95;
+   padding: 20px;
+   position: fixed;
+   width: 300px;
+   z-index: 100;
+}
+
+.vshare-lightbox-wrapper .loading
+{
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 32px;
+   opacity: .5;
+   padding: 10px;
+   position: fixed;
+   width: 32px;
+   z-index: 10100;
+}
+
+.vshare-lightbox-wrapper .arrow
+{
+   cursor: pointer;
+   height: 100px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   width: 82px;
+   z-index: 10003;
+}
+
+.vshare-lightbox-wrapper .arrow.left
+{
+   left: 9px;
+}
+
+.vshare-lightbox-wrapper .arrow.right
+{
+   right: 9px;
+}
+
+.vshare-lightbox-wrapper .arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.vshare-lightbox-wrapper .arrow.disabled 
+{
+   display: none;
+}
+
+.vshare-lightbox-wrapper .arrow-t, 
+.vshare-lightbox-wrapper .arrow-b
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   left: 26px;
+   position: relative;
+   width: 30px;
+}
+
+.vshare-lightbox-wrapper .arrow-t
+{
+   top: 38px;
+}
+
+.vshare-lightbox-wrapper .arrow-b
+{
+   top: 50px;
+}
+
+.vshare-lightbox-wrapper .close
+{
+   cursor: pointer;
+   height: 22px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   right: 39px;
+   top: 30px;
+   width: 22px;
+   z-index: 10003;
+}
+
+.vshare-lightbox-wrapper .close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.vshare-lightbox-wrapper .close .cw, 
+.vshare-lightbox-wrapper .close .ccw
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   position: absolute;
+   left: -4px;
+   top: 8px;
+   width: 30px;
+}
+
+.vshare-lightbox-wrapper .cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.vshare-lightbox-wrapper .ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.vshare-lightbox-wrapper .close-alt, 
+.vshare-lightbox-wrapper .arrow-right-alt, 
+.vshare-lightbox-wrapper .arrow-left-alt 
+{
+   color: #fff;
+   display: none;
+   font-size: 2.5em;
+   line-height: 100%;
+}
+
+.ie8 .vshare-lightbox-wrapper .close-alt, 
+.ie8 .vshare-lightbox-wrapper .arrow-right-alt, 
+.ie8 .vshare-lightbox-wrapper .arrow-left-alt 
+{
+   display: block;
+}
+
+.ie8 .vshare-lightbox-wrapper .cw, 
+.ie8 .vshare-lightbox-wrapper .ccw 
+{
+   display: none;
+}
+
+.vshare-content-layout .vshare-content
+{
+   margin:0 auto;
+}
+
+/* Begin Additional CSS Styles */
+.vshare-logo-text {margin-top: -10px}
+.vshare-blockheader .t, .vshare-vmenublockheader .t {white-space: nowrap;}
+/* End Additional CSS Styles */
